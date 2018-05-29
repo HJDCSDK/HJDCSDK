@@ -56,6 +56,7 @@
 		3B7B0B5C20BD1B5500C7F8F8 = {
 			isa = PBXGroup;
 			children = (
+				BD12039020BD30430039C3B8 /* testDir */,
 				3B7B0B6720BD1B5500C7F8F8 /* HJDCSDK */,
 				3B7B0BA820BD25EA00C7F8F8 /* HJDCSDKBundle */,
 				3B7B0B6620BD1B5500C7F8F8 /* Products */,
@@ -90,6 +91,13 @@
 				3B7B0BA920BD25EA00C7F8F8 /* Info.plist */,
 			);
 			path = HJDCSDKBundle;
+			sourceTree = "<group>";
+		};
+		BD12039020BD30430039C3B8 /* testDir */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = testDir;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
