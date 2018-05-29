@@ -109,7 +109,7 @@ Pod::Spec.new do |s|
   # s.resources = "Resources/*.png"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
-
+  s.resource_bundle = {"#{s.name}Bundle"=>["#{s.name}Bundle"]}
 
   # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #

@@ -31,10 +31,19 @@
 		3B7B0B7720BD1BCE00C7F8F8 /* HJDCLSF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HJDCLSF.h; sourceTree = "<group>"; };
 		3B7B0B7A20BD1BDC00C7F8F8 /* HJDCXLD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HJDCXLD.h; sourceTree = "<group>"; };
 		3B7B0B7D20BD1BEB00C7F8F8 /* HJDCWDG.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HJDCWDG.h; sourceTree = "<group>"; };
+		3B7B0BA720BD25EA00C7F8F8 /* HJDCSDKBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HJDCSDKBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B7B0BA920BD25EA00C7F8F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3B7B0B6220BD1B5500C7F8F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B7B0BA420BD25EA00C7F8F8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -47,8 +56,8 @@
 		3B7B0B5C20BD1B5500C7F8F8 = {
 			isa = PBXGroup;
 			children = (
-				3B7B0BA220BD244D00C7F8F8 /* Commom */,
 				3B7B0B6720BD1B5500C7F8F8 /* HJDCSDK */,
+				3B7B0BA820BD25EA00C7F8F8 /* HJDCSDKBundle */,
 				3B7B0B6620BD1B5500C7F8F8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				3B7B0B6520BD1B5500C7F8F8 /* libHJDCSDK.a */,
+				3B7B0BA720BD25EA00C7F8F8 /* HJDCSDKBundle.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -74,11 +84,12 @@
 			path = HJDCSDK;
 			sourceTree = "<group>";
 		};
-		3B7B0BA220BD244D00C7F8F8 /* Commom */ = {
+		3B7B0BA820BD25EA00C7F8F8 /* HJDCSDKBundle */ = {
 			isa = PBXGroup;
 			children = (
+				3B7B0BA920BD25EA00C7F8F8 /* Info.plist */,
 			);
-			path = Commom;
+			path = HJDCSDKBundle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -101,6 +112,23 @@
 			productReference = 3B7B0B6520BD1B5500C7F8F8 /* libHJDCSDK.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		3B7B0BA620BD25EA00C7F8F8 /* HJDCSDKBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B7B0BAA20BD25EA00C7F8F8 /* Build configuration list for PBXNativeTarget "HJDCSDKBundle" */;
+			buildPhases = (
+				3B7B0BA320BD25EA00C7F8F8 /* Sources */,
+				3B7B0BA420BD25EA00C7F8F8 /* Frameworks */,
+				3B7B0BA520BD25EA00C7F8F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HJDCSDKBundle;
+			productName = HJDCSDKBundle;
+			productReference = 3B7B0BA720BD25EA00C7F8F8 /* HJDCSDKBundle.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -111,6 +139,9 @@
 				ORGANIZATIONNAME = WangAn;
 				TargetAttributes = {
 					3B7B0B6420BD1B5500C7F8F8 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					3B7B0BA620BD25EA00C7F8F8 = {
 						CreatedOnToolsVersion = 9.3;
 					};
 				};
@@ -128,12 +159,30 @@
 			projectRoot = "";
 			targets = (
 				3B7B0B6420BD1B5500C7F8F8 /* HJDCSDK */,
+				3B7B0BA620BD25EA00C7F8F8 /* HJDCSDKBundle */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		3B7B0BA520BD25EA00C7F8F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3B7B0B6120BD1B5500C7F8F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B7B0BA320BD25EA00C7F8F8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -277,6 +326,42 @@
 			};
 			name = Release;
 		};
+		3B7B0BAB20BD25EA00C7F8F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = SZ55FZ9DJD;
+				INFOPLIST_FILE = HJDCSDKBundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wangan.demo.HJDCSDKBundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		3B7B0BAC20BD25EA00C7F8F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = SZ55FZ9DJD;
+				INFOPLIST_FILE = HJDCSDKBundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wangan.demo.HJDCSDKBundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -294,6 +379,15 @@
 			buildConfigurations = (
 				3B7B0B6F20BD1B5500C7F8F8 /* Debug */,
 				3B7B0B7020BD1B5500C7F8F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B7B0BAA20BD25EA00C7F8F8 /* Build configuration list for PBXNativeTarget "HJDCSDKBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B7B0BAB20BD25EA00C7F8F8 /* Debug */,
+				3B7B0BAC20BD25EA00C7F8F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
