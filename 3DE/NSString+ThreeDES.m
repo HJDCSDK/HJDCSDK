@@ -18,6 +18,7 @@
 #pragma mark 加密
 + (NSString *)encrypt3DES:(NSString *)plainText{
     //获取当前日期
+    
     NSString * keyDate = [self acquireDate];
     
     //拼接key并进行3DES加密
