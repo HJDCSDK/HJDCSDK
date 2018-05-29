@@ -4,7 +4,10 @@
 //
 //  Created by WangAn on 2018/5/29.
 //
-
+//
+//
+//
+//NSString 加/解密
 #import <Foundation/Foundation.h>
 
 @interface NSString (HJDCEncrypt)
