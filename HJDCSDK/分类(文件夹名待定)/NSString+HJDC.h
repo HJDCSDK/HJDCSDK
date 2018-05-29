@@ -11,6 +11,26 @@
 @interface NSString (HJDC)
 
 /**
+ cache目录
+ 
+ @return path
+ */
++ (NSString *)hjdc_cacheDir;
+
+/**
+ doc目录
+ 
+ @return path
+ */
++ (NSString *)hjdc_docDir;
+/**
+ temp目录
+ 
+ @return path
+ */
++ (NSString *)hjdc_tempDir;
+
+/**
  将当前字符串拼接到cache目录后面
 
  @return path
