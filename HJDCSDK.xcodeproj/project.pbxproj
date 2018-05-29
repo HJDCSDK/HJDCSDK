@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3B7B0B6B20BD1B5500C7F8F8 /* HJDCSDK.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3B7B0B6820BD1B5500C7F8F8 /* HJDCSDK.h */; };
+		BD30A1EE20BD4B42005CCBF0 /* NSString+ThreeDES.m in Sources */ = {isa = PBXBuildFile; fileRef = BD30A1E920BD4B42005CCBF0 /* NSString+ThreeDES.m */; };
+		BD30A1EF20BD4B42005CCBF0 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = BD30A1EC20BD4B42005CCBF0 /* GTMBase64.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +35,11 @@
 		3B7B0B7D20BD1BEB00C7F8F8 /* HJDCWDG.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HJDCWDG.h; sourceTree = "<group>"; };
 		3B7B0BA720BD25EA00C7F8F8 /* HJDCSDKBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HJDCSDKBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B7B0BA920BD25EA00C7F8F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD30A1E820BD4B42005CCBF0 /* NSString+ThreeDES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ThreeDES.h"; sourceTree = "<group>"; };
+		BD30A1E920BD4B42005CCBF0 /* NSString+ThreeDES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ThreeDES.m"; sourceTree = "<group>"; };
+		BD30A1EB20BD4B42005CCBF0 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		BD30A1EC20BD4B42005CCBF0 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		BD30A1ED20BD4B42005CCBF0 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +81,8 @@
 		3B7B0B6720BD1B5500C7F8F8 /* HJDCSDK */ = {
 			isa = PBXGroup;
 			children = (
+				BD30A1E720BD4B42005CCBF0 /* 3DE */,
+				BD30A1EA20BD4B42005CCBF0 /* GTMBase64 */,
 				3B7B0B6820BD1B5500C7F8F8 /* HJDCSDK.h */,
 				3B7B0B7120BD1BAE00C7F8F8 /* HJDCDSG.h */,
 				3B7B0B7420BD1BBD00C7F8F8 /* HJDCLDG.h */,
@@ -90,6 +99,25 @@
 				3B7B0BA920BD25EA00C7F8F8 /* Info.plist */,
 			);
 			path = HJDCSDKBundle;
+			sourceTree = "<group>";
+		};
+		BD30A1E720BD4B42005CCBF0 /* 3DE */ = {
+			isa = PBXGroup;
+			children = (
+				BD30A1E820BD4B42005CCBF0 /* NSString+ThreeDES.h */,
+				BD30A1E920BD4B42005CCBF0 /* NSString+ThreeDES.m */,
+			);
+			path = 3DE;
+			sourceTree = "<group>";
+		};
+		BD30A1EA20BD4B42005CCBF0 /* GTMBase64 */ = {
+			isa = PBXGroup;
+			children = (
+				BD30A1EB20BD4B42005CCBF0 /* GTMBase64.h */,
+				BD30A1EC20BD4B42005CCBF0 /* GTMBase64.m */,
+				BD30A1ED20BD4B42005CCBF0 /* GTMDefines.h */,
+			);
+			path = GTMBase64;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +207,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD30A1EE20BD4B42005CCBF0 /* NSString+ThreeDES.m in Sources */,
+				BD30A1EF20BD4B42005CCBF0 /* GTMBase64.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
