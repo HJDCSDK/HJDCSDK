@@ -10,7 +10,7 @@
 #import <CommonCrypto/CommonCryptor.h>
 @implementation NSData (HJDCEncrypt)
 - (NSData *)AES256EncryptWithKey:(NSString *)key {
-    if (self.length == 0) {
+    if (self.length == 0 || ![key isKindOfClass:[NSString class]]) {
         return nil;
     }
     
@@ -41,9 +41,9 @@
 }
 
 - (NSData *)AES256DecryptWithKey:(NSString *)key {
-    if (self.length == 0) {
+    if (self.length == 0 || ![key isKindOfClass:[NSString class]]) {
         return nil;
-    }    
+    }
     char keyPtr[kCCKeySizeAES256 + 1]; // room for terminator (unused)
     bzero(keyPtr, sizeof(keyPtr));     // fill with zeroes (for padding)
     
