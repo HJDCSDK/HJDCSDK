@@ -7,8 +7,6 @@
 
 #import <Foundation/Foundation.h>
 
-
-
 @interface NSString (HJDCEncrypt)
-
+- (NSString *)stringFromMD5;
 @end
