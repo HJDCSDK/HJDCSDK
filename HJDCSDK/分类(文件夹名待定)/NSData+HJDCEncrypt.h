@@ -8,8 +8,17 @@
 #import <Foundation/Foundation.h>
 
 @interface NSData (HJDCEncrypt)
+/**
+ AES256加密NSData
+ @param key AES256 key
+ @return 加密后的NSData
+ */
 - (NSData *)AES256EncryptWithKey:(NSString *)key;
-
+/**
+ AES256解密NSData
+ @param key AES256 key
+ @return 解密后的NSData
+ */
 - (NSData *)AES256DecryptWithKey:(NSString *)key;
 
 @end

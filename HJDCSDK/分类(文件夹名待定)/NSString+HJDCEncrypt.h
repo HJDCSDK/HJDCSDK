@@ -8,5 +8,9 @@
 #import <Foundation/Foundation.h>
 
 @interface NSString (HJDCEncrypt)
+/**
+ 获取MD5字符串
+ @return MD5string
+ */
 - (NSString *)stringFromMD5;
 @end
