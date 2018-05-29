@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3B7B0B6B20BD1B5500C7F8F8 /* HJDCSDK.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3B7B0B6820BD1B5500C7F8F8 /* HJDCSDK.h */; };
-		BD30A1E620BD36FD005CCBF0 /* NSString+ThreeDES.m in Sources */ = {isa = PBXBuildFile; fileRef = BD30A1E520BD36FD005CCBF0 /* NSString+ThreeDES.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,8 +33,6 @@
 		3B7B0B7D20BD1BEB00C7F8F8 /* HJDCWDG.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HJDCWDG.h; sourceTree = "<group>"; };
 		3B7B0BA720BD25EA00C7F8F8 /* HJDCSDKBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HJDCSDKBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B7B0BA920BD25EA00C7F8F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BD30A1E420BD36FD005CCBF0 /* NSString+ThreeDES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ThreeDES.h"; sourceTree = "<group>"; };
-		BD30A1E520BD36FD005CCBF0 /* NSString+ThreeDES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ThreeDES.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +56,6 @@
 		3B7B0B5C20BD1B5500C7F8F8 = {
 			isa = PBXGroup;
 			children = (
-				BD30A1E320BD36FD005CCBF0 /* 3DE */,
 				3B7B0B6720BD1B5500C7F8F8 /* HJDCSDK */,
 				3B7B0BA820BD25EA00C7F8F8 /* HJDCSDKBundle */,
 				3B7B0B6620BD1B5500C7F8F8 /* Products */,
@@ -94,15 +90,6 @@
 				3B7B0BA920BD25EA00C7F8F8 /* Info.plist */,
 			);
 			path = HJDCSDKBundle;
-			sourceTree = "<group>";
-		};
-		BD30A1E320BD36FD005CCBF0 /* 3DE */ = {
-			isa = PBXGroup;
-			children = (
-				BD30A1E420BD36FD005CCBF0 /* NSString+ThreeDES.h */,
-				BD30A1E520BD36FD005CCBF0 /* NSString+ThreeDES.m */,
-			);
-			path = 3DE;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,7 +179,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD30A1E620BD36FD005CCBF0 /* NSString+ThreeDES.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
