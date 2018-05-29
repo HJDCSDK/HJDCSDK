@@ -47,6 +47,7 @@
 		3B7B0B5C20BD1B5500C7F8F8 = {
 			isa = PBXGroup;
 			children = (
+				3B7B0BA220BD244D00C7F8F8 /* Commom */,
 				3B7B0B6720BD1B5500C7F8F8 /* HJDCSDK */,
 				3B7B0B6620BD1B5500C7F8F8 /* Products */,
 			);
@@ -71,6 +72,13 @@
 				3B7B0B7D20BD1BEB00C7F8F8 /* HJDCWDG.h */,
 			);
 			path = HJDCSDK;
+			sourceTree = "<group>";
+		};
+		3B7B0BA220BD244D00C7F8F8 /* Commom */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Commom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
