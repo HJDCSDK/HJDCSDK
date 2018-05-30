@@ -13,7 +13,7 @@
 #define gIv  @"01234567"
 #define kSecrectKeyLength 24
 @implementation NSString (HJDCEncrypt)
-- (NSString *)stringFromMD5 {
+- (NSString *)hjdc_stringFromMD5 {
     if (self.length == 0) {
         return nil;
     }
@@ -30,28 +30,28 @@
     return outputString;
 }
 #pragma mark 加密
-+ (NSString *)encrypt3DES:(NSString *)plainText{
++ (NSString *)hjdc_encrypt3DES:(NSString *)plainText{
     //获取当前日期
     
-    NSString * keyDate = [self acquireDate];
+    NSString * keyDate = [self hjdc_acquireDate];
     
     //拼接key并进行3DES加密
     NSString * key = [NSString stringWithFormat:@"%@_@YZFPadWeb2015",keyDate];
-    return [self encrypt:plainText withKey:key];
+    return [self hjdc_encrypt:plainText withKey:key];
 }
 
 #pragma mark 解密
-+ (NSString *)decrypt3DES:(NSString*)encryptText{
++ (NSString *)hjdc_decrypt3DES:(NSString*)encryptText{
     //获取当前日期
-    NSString * keyDate = [self acquireDate];
+    NSString * keyDate = [self hjdc_acquireDate];
     
     //拼接key并进行3DES解密
     NSString * key = [NSString stringWithFormat:@"%@_@YZFPadWeb2015",keyDate];
-    return [self decrypt:encryptText withKey:key];
+    return [self hjdc_decrypt:encryptText withKey:key];
 }
 
 #pragma mark 获取时间
-+ (NSString *)acquireDate{
++ (NSString *)hjdc_acquireDate{
     NSDate * date = [NSDate date];
     NSDateFormatter  *dateformatter=[[NSDateFormatter alloc] init];
     [dateformatter setDateFormat:@"YYYY-MM-dd"];
@@ -59,7 +59,7 @@
 }
 
 #pragma 加密算法
-+ (NSString*)encrypt:(NSString*)plainText withKey:(NSString*)key{
++ (NSString*)hjdc_encrypt:(NSString*)plainText withKey:(NSString*)key{
     NSData* data = [plainText dataUsingEncoding:NSUTF8StringEncoding];
     size_t plainTextBufferSize = [data length];
     const void *vplainText = (const void *)[data bytes];
@@ -94,7 +94,7 @@
 }
 
 #pragma 解密算法
-+ (NSString*)decrypt:(NSString*)encryptText withKey:(NSString*)key{
++ (NSString*)hjdc_decrypt:(NSString*)encryptText withKey:(NSString*)key{
     
     NSData *encryptData = [GTMBase64 decodeData:[encryptText dataUsingEncoding:NSUTF8StringEncoding]];
     size_t plainTextBufferSize = [encryptData length];
@@ -130,7 +130,7 @@
 }
 
 
-- (NSString*) sha1
+- (NSString*)sha1
 {
     const char *cstr = [self cStringUsingEncoding:NSUTF8StringEncoding];
     NSData *data = [NSData dataWithBytes:cstr length:self.length];

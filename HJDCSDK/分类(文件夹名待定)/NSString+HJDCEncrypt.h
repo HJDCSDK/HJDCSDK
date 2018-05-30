@@ -15,17 +15,17 @@
  获取MD5字符串
  @return MD5string
  */
-- (NSString *)stringFromMD5;
+- (NSString *)hjdc_stringFromMD5;
 /**
  3DES加密
  @param plainText String
  @return 加密后的String
  */
-+ (NSString *)encrypt3DES:(NSString *)plainText;
++ (NSString *)hjdc_encrypt3DES:(NSString *)plainText;
 /**
  3DES解密
  @param encryptText String
  @return 解密后的String
  */
-+ (NSString *)decrypt3DES:(NSString*)encryptText;
++ (NSString *)hjdc_decrypt3DES:(NSString*)encryptText;
 @end

@@ -9,7 +9,7 @@
 #import <CommonCrypto/CommonDigest.h>
 #import <CommonCrypto/CommonCryptor.h>
 @implementation NSData (HJDCEncrypt)
-- (NSData *)AES256EncryptWithKey:(NSString *)key {
+- (NSData *)hjdc_AES256EncryptWithKey:(NSString *)key {
     if (self.length == 0 || ![key isKindOfClass:[NSString class]]) {
         return nil;
     }
@@ -40,7 +40,7 @@
     return nil;
 }
 
-- (NSData *)AES256DecryptWithKey:(NSString *)key {
+- (NSData *)hjdc_AES256DecryptWithKey:(NSString *)key {
     if (self.length == 0 || ![key isKindOfClass:[NSString class]]) {
         return nil;
     }
