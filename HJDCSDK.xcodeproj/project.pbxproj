@@ -8,8 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		3B7B0B6B20BD1B5500C7F8F8 /* HJDCSDK.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3B7B0B6820BD1B5500C7F8F8 /* HJDCSDK.h */; };
-		BD30A1EE20BD4B42005CCBF0 /* NSString+ThreeDES.m in Sources */ = {isa = PBXBuildFile; fileRef = BD30A1E920BD4B42005CCBF0 /* NSString+ThreeDES.m */; };
 		BD30A1EF20BD4B42005CCBF0 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = BD30A1EC20BD4B42005CCBF0 /* GTMBase64.m */; };
+		BD45F8672110003E007F5711 /* NSData+HJDCEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = BD45F8602110003E007F5711 /* NSData+HJDCEncrypt.m */; };
+		BD45F8682110003E007F5711 /* NSString+HJDC.m in Sources */ = {isa = PBXBuildFile; fileRef = BD45F8622110003E007F5711 /* NSString+HJDC.m */; };
+		BD45F8692110003E007F5711 /* NSString+HJDCEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = BD45F8642110003E007F5711 /* NSString+HJDCEncrypt.m */; };
+		BD45F86A2110003E007F5711 /* NSString+HJDCTool.m in Sources */ = {isa = PBXBuildFile; fileRef = BD45F8662110003E007F5711 /* NSString+HJDCTool.m */; };
+		BD45F870211000E0007F5711 /* ChartItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BD45F86D211000E0007F5711 /* ChartItem.m */; };
+		BD45F871211000E0007F5711 /* ChartLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD45F86F211000E0007F5711 /* ChartLineView.m */; };
+		BD4AC69C219A5C8600FE6951 /* pieChartItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4AC699219A5C8600FE6951 /* pieChartItem.m */; };
+		BD4AC69D219A5C8600FE6951 /* PZLPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4AC69B219A5C8600FE6951 /* PZLPieChart.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,11 +42,25 @@
 		3B7B0B7D20BD1BEB00C7F8F8 /* HJDCWDG.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HJDCWDG.h; sourceTree = "<group>"; };
 		3B7B0BA720BD25EA00C7F8F8 /* HJDCSDKBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HJDCSDKBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B7B0BA920BD25EA00C7F8F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BD30A1E820BD4B42005CCBF0 /* NSString+ThreeDES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ThreeDES.h"; sourceTree = "<group>"; };
-		BD30A1E920BD4B42005CCBF0 /* NSString+ThreeDES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ThreeDES.m"; sourceTree = "<group>"; };
 		BD30A1EB20BD4B42005CCBF0 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
 		BD30A1EC20BD4B42005CCBF0 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
 		BD30A1ED20BD4B42005CCBF0 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		BD45F85F2110003E007F5711 /* NSData+HJDCEncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+HJDCEncrypt.h"; sourceTree = "<group>"; };
+		BD45F8602110003E007F5711 /* NSData+HJDCEncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+HJDCEncrypt.m"; sourceTree = "<group>"; };
+		BD45F8612110003E007F5711 /* NSString+HJDC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HJDC.h"; sourceTree = "<group>"; };
+		BD45F8622110003E007F5711 /* NSString+HJDC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HJDC.m"; sourceTree = "<group>"; };
+		BD45F8632110003E007F5711 /* NSString+HJDCEncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HJDCEncrypt.h"; sourceTree = "<group>"; };
+		BD45F8642110003E007F5711 /* NSString+HJDCEncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HJDCEncrypt.m"; sourceTree = "<group>"; };
+		BD45F8652110003E007F5711 /* NSString+HJDCTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HJDCTool.h"; sourceTree = "<group>"; };
+		BD45F8662110003E007F5711 /* NSString+HJDCTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HJDCTool.m"; sourceTree = "<group>"; };
+		BD45F86C211000E0007F5711 /* ChartItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartItem.h; sourceTree = "<group>"; };
+		BD45F86D211000E0007F5711 /* ChartItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartItem.m; sourceTree = "<group>"; };
+		BD45F86E211000E0007F5711 /* ChartLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartLineView.h; sourceTree = "<group>"; };
+		BD45F86F211000E0007F5711 /* ChartLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartLineView.m; sourceTree = "<group>"; };
+		BD4AC698219A5C8600FE6951 /* pieChartItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pieChartItem.h; sourceTree = "<group>"; };
+		BD4AC699219A5C8600FE6951 /* pieChartItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pieChartItem.m; sourceTree = "<group>"; };
+		BD4AC69A219A5C8600FE6951 /* PZLPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PZLPieChart.h; sourceTree = "<group>"; };
+		BD4AC69B219A5C8600FE6951 /* PZLPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PZLPieChart.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +102,9 @@
 		3B7B0B6720BD1B5500C7F8F8 /* HJDCSDK */ = {
 			isa = PBXGroup;
 			children = (
-				BD30A1E720BD4B42005CCBF0 /* 3DE */,
+				BD4AC697219A5C8600FE6951 /* 饼图 */,
+				BD45F86B211000E0007F5711 /* 基金走势图 */,
+				BD45F85E2110003E007F5711 /* 分类(文件夹名待定) */,
 				BD30A1EA20BD4B42005CCBF0 /* GTMBase64 */,
 				3B7B0B6820BD1B5500C7F8F8 /* HJDCSDK.h */,
 				3B7B0B7120BD1BAE00C7F8F8 /* HJDCDSG.h */,
@@ -101,15 +124,6 @@
 			path = HJDCSDKBundle;
 			sourceTree = "<group>";
 		};
-		BD30A1E720BD4B42005CCBF0 /* 3DE */ = {
-			isa = PBXGroup;
-			children = (
-				BD30A1E820BD4B42005CCBF0 /* NSString+ThreeDES.h */,
-				BD30A1E920BD4B42005CCBF0 /* NSString+ThreeDES.m */,
-			);
-			path = 3DE;
-			sourceTree = "<group>";
-		};
 		BD30A1EA20BD4B42005CCBF0 /* GTMBase64 */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +132,43 @@
 				BD30A1ED20BD4B42005CCBF0 /* GTMDefines.h */,
 			);
 			path = GTMBase64;
+			sourceTree = "<group>";
+		};
+		BD45F85E2110003E007F5711 /* 分类(文件夹名待定) */ = {
+			isa = PBXGroup;
+			children = (
+				BD45F85F2110003E007F5711 /* NSData+HJDCEncrypt.h */,
+				BD45F8602110003E007F5711 /* NSData+HJDCEncrypt.m */,
+				BD45F8612110003E007F5711 /* NSString+HJDC.h */,
+				BD45F8622110003E007F5711 /* NSString+HJDC.m */,
+				BD45F8632110003E007F5711 /* NSString+HJDCEncrypt.h */,
+				BD45F8642110003E007F5711 /* NSString+HJDCEncrypt.m */,
+				BD45F8652110003E007F5711 /* NSString+HJDCTool.h */,
+				BD45F8662110003E007F5711 /* NSString+HJDCTool.m */,
+			);
+			path = "分类(文件夹名待定)";
+			sourceTree = "<group>";
+		};
+		BD45F86B211000E0007F5711 /* 基金走势图 */ = {
+			isa = PBXGroup;
+			children = (
+				BD45F86C211000E0007F5711 /* ChartItem.h */,
+				BD45F86D211000E0007F5711 /* ChartItem.m */,
+				BD45F86E211000E0007F5711 /* ChartLineView.h */,
+				BD45F86F211000E0007F5711 /* ChartLineView.m */,
+			);
+			path = "基金走势图";
+			sourceTree = "<group>";
+		};
+		BD4AC697219A5C8600FE6951 /* 饼图 */ = {
+			isa = PBXGroup;
+			children = (
+				BD4AC698219A5C8600FE6951 /* pieChartItem.h */,
+				BD4AC699219A5C8600FE6951 /* pieChartItem.m */,
+				BD4AC69A219A5C8600FE6951 /* PZLPieChart.h */,
+				BD4AC69B219A5C8600FE6951 /* PZLPieChart.m */,
+			);
+			path = "饼图";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,7 +258,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD30A1EE20BD4B42005CCBF0 /* NSString+ThreeDES.m in Sources */,
 				BD30A1EF20BD4B42005CCBF0 /* GTMBase64.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,6 +266,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD45F86A2110003E007F5711 /* NSString+HJDCTool.m in Sources */,
+				BD4AC69C219A5C8600FE6951 /* pieChartItem.m in Sources */,
+				BD45F871211000E0007F5711 /* ChartLineView.m in Sources */,
+				BD45F8682110003E007F5711 /* NSString+HJDC.m in Sources */,
+				BD45F870211000E0007F5711 /* ChartItem.m in Sources */,
+				BD45F8672110003E007F5711 /* NSData+HJDCEncrypt.m in Sources */,
+				BD4AC69D219A5C8600FE6951 /* PZLPieChart.m in Sources */,
+				BD45F8692110003E007F5711 /* NSString+HJDCEncrypt.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
